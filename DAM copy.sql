@@ -1,4 +1,3 @@
-drop database work;
 create database work;
 use work;
 CREATE TABLE EMPLOYEE (
