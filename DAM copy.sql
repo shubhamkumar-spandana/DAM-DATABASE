@@ -5,7 +5,6 @@ CREATE TABLE EMPLOYEE (
     Emp_id VARCHAR(15) UNIQUE NOT NULL,
     Emp_name VARCHAR(30) NOT NULL,
     Branch VARCHAR(30),
-    Designation VARCHAR(25),
     Department VARCHAR(25)
 );
 
@@ -26,7 +25,7 @@ CREATE TABLE ALLEGATIONS (
     Serial_number INT AUTO_INCREMENT PRIMARY KEY,
     Reference_id VARCHAR(14) DEFAULT '',
     Complaint_id INT,
-    Allegations text,
+    Allegations varchar(1000),
     Date_of_identification DATE,
     Created_by VARCHAR(30),
     Updated_by VARCHAR(30),
