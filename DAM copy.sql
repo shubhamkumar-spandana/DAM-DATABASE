@@ -12,6 +12,7 @@ CREATE TABLE COMPLAINT (
     Serial_number INT AUTO_INCREMENT PRIMARY KEY,
     Reference_id VARCHAR(14) DEFAULT '',
     Complaint_id INT UNIQUE NOT NULL,
+    case_id INT UNIQUE DEFAULT NULL,
     Emp_id VARCHAR(15),
     Case_type VARCHAR(30),
     Case_nature VARCHAR(50),
